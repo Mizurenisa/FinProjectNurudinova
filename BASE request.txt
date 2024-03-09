@@ -1,0 +1,7 @@
+SELECT pip.login, COUNT(a.*)AS order_count FROM "Couriers" pip JOIN "Orders" a ON pip.id = a."courierId" WHERE a."inDelivery" = true GROUP BY pip.login;
+
+SELECT track, CASE WHEN finished = true THEN 2 WHEN cancelled = true THEN -1 WHEN "inDelivery" = true THEN 1 ELSE 0 END AS status from "Orders";
+
+
+
+
