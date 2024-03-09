@@ -12,4 +12,5 @@ test_order_information - автотест
 configuration, data, sender_request - файлы для автотеста
 
 Запуск всех тестов выполняется командой pytest
+
 Для работы файлов необходимы библиотеки request и pytest
